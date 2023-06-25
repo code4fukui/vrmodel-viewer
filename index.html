@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>vr-viewer</title>
+</head>
+<body>
+<script type="module">
+import { cr, asset } from "https://js.sabae.cc/aframe.js";
+
+const param = new URL(location.href).searchParams;
+const url = param.get("url") || "model/sabae-candidates-2023.glb";
+const z = param.get("z") || -2.5;
+
+const scene = cr("a-scene", document.body);
+const model = cr("a-entity");
+const id = asset(url);
+console.log(id);
+model.setAttribute("gltf-model", id);
+// model.setAttribute("rotation", { x: 0, y: -90, z: 0 });
+model.setAttribute("position", { x: 0, y: 0, z });
+scene.appendChild(model);
+
+</script>
+</body>
+</html>
