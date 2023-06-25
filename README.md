@@ -12,7 +12,8 @@ embedded in HTML
 
 ## content
 
-const url = param.get("url") || "";
-const z = param.get("z") || -2.5;
+## see also
 
-- [2023-06-25 鯖江市議会選挙2023](https://code4fukui.github.io/vrmodel-viewer/?url=model/sabae-candidates-2023.glb&z=-2.5)
+- [vr-viewer](https://github.com/code4fukui/vr-viewer)
+- [vr360-viewer](https://github.com/code4fukui/vr360-viewer)
+- [vr180-viewer](https://github.com/code4fukui/vr180-viewer)
